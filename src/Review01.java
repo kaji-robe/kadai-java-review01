@@ -18,13 +18,13 @@ public class Review01 {
         int taxRate = 10; //消費税率
 
         int result;
-        result = taxMethod(price, taxRate); //taxMethoodを呼び出し
+        result = tax(price, taxRate); //taxメソッドを呼び出し
 
         System.out.println(price + "円の商品の税込価格は" + (price + result) +
                            "円（消費税は" + result + "円）です。");
         }
 
-    public static int taxMethod(int price, int taxRate) {
+    public static int tax(int price, int taxRate) {
         int result = price * taxRate / 100 ;
         return result; //戻り値
 
