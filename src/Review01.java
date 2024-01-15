@@ -17,15 +17,15 @@ public class Review01 {
         int price = 1500; //商品価格
         int taxRate = 10; //消費税率
 
-        double result;
+        int result;
         result = taxMethod(price, taxRate); //taxMethoodを呼び出し
 
         System.out.println(price + "円の商品の税込価格は" + (price + (int)result) +
                            "円（消費税は" + (int)result + "円）です。");
         }
 
-    public static double taxMethod(double price, double taxRate) {
-        double result = price * (taxRate / 100) ;
+    public static int taxMethod(int price, int taxRate) {
+        int result = price * taxRate / 100 ;
         return result; //戻り値
 
         }
