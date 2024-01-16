@@ -20,8 +20,7 @@ public class Review01 {
         int result;
         result = tax(price, taxRate); //taxメソッドを呼び出し
 
-        System.out.println(price + "円の商品の税込価格は" + (price + result) +
-                           "円（消費税は" + result + "円）です。");
+        System.out.println(price + "円の商品の税込価格は" + (price + result) + "円（消費税は" + result + "円）です。");
         }
 
     public static int tax(int price, int taxRate) {
